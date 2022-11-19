@@ -14,7 +14,7 @@ pipeline {
     
     stage ('TEST') {
       parallel{
-       stages{
+      
          stage('QA'){
              steps {
                    echo "This is QA stage" 
@@ -25,7 +25,7 @@ pipeline {
                    echo "This is BVT stage" 
              }
          }    
-       }
+       
       } 
     }  
     
